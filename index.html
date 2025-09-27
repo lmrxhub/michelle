@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Serviços - Beauty Chaves</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+      flex: 1;
+    }
+    .card-content h2 {
+      font-size: 1.2rem;
+      margin: 0 0 10px;
+      color: #000;
+    }
+    .card-content p {
+      font-size: 0.9rem;
+      margin: 0 0 10px;
+    }
+    .preco {
+      font-weight: bold;
+      color: #e67e22;
+      margin-bottom: 10px;
+    }
+    .zap-btn {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background: #25d366;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 10px;
+      transition: 0.3s;
+    }
+    .zap-btn:hover {
+      background: #128c7e;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+    /* Botão flutuante WhatsApp */
+    .zap-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    .zap-float:hover {
+      background: #128c7e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✨ Beauty Chaves ✨</h1>
+    <p>Catálogo de Serviços Profissionais</p>
+  </header>
+
+  <section class="catalogo">
+
+    <!-- Brow Lamination -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?eyebrow,beauty" alt="Brow Lamination">
+      <div class="card-content">
+        <h2>Brow Lamination + Henna</h2>
+        <p>Tratamento que deixa os fios mais espessos, encorpados e saudáveis.</p>
+        <p class="preco">R$ 100,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Brow Lamination">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Lash Lifting -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?eyelashes,makeup" alt="Lash Lifting">
+      <div class="card-content">
+        <h2>Lash Lifting</h2>
+        <p>Personalização do design de cílios adaptado ao seu olhar.</p>
+        <p class="preco">R$ 100,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Lash Lifting">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Fio a Fio -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?lashes,natural" alt="Fio a Fio">
+      <div class="card-content">
+        <h2>Fio a Fio</h2>
+        <p>Extensão delicada fio a fio, para quem gosta de naturalidade.</p>
+        <p class="preco">R$ 140,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Fio a Fio">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Volume Brasileiro -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?eyelash,extension" alt="Volume Brasileiro">
+      <div class="card-content">
+        <h2>Volume Brasileiro</h2>
+        <p>Volume suave e elegante com fios em formato de Y.</p>
+        <p class="preco">R$ 140,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Volume Brasileiro">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Volume Diamond -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?eyelash,beauty" alt="Volume Diamond">
+      <div class="card-content">
+        <h2>Volume Diamond</h2>
+        <p>Extensão com conjunto de 5 fios sintéticos para um volume cheio.</p>
+        <p class="preco">R$ 160,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Volume Diamond">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Fox Diamond -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?lashes,fox" alt="Fox Diamond">
+      <div class="card-content">
+        <h2>Fox Diamond</h2>
+        <p>Olhar delineado suave utilizando fios em formato M Y.</p>
+        <p class="preco">R$ 140,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Fox Diamond">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Premium -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?eyelash,premium" alt="Premium">
+      <div class="card-content">
+        <h2>Volume Premium</h2>
+        <p>Volume elegante, durabilidade de mais de 30 dias sem manutenção.</p>
+        <p class="preco">R$ 200,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Volume Premium">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Design de Sobrancelha -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?eyebrows,design" alt="Design de Sobrancelha">
+      <div class="card-content">
+        <h2>Design Estratégico</h2>
+        <p>Estratégia para sobrancelhas uniformes e bem desenhadas.</p>
+        <p class="preco">R$ 35,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Design Estratégico">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Design com Henna -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?eyebrows,henna" alt="Design com Henna">
+      <div class="card-content">
+        <h2>Design com Henna</h2>
+        <p>Design com preenchimento de falhas usando henna.</p>
+        <p class="preco">R$ 50,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Design com Henna">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Remoção -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?makeup,removal" alt="Remoção">
+      <div class="card-content">
+        <h2>Remoção</h2>
+        <p>Técnica que remove extensões sem danificar os fios naturais.</p>
+        <p class="preco">R$ 30,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Remoção">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Reposição -->
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?lashes,repair" alt="Reposição">
+      <div class="card-content">
+        <h2>Reposição</h2>
+        <p>Reposição de fios sintéticos em caso de desfalque específico.</p>
+        <p class="preco">R$ 40,00</p>
+        <a class="zap-btn" href="https://wa.me/5599999999999?text=Quero agendar Reposição">Agendar no WhatsApp</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>Rua Rita Zeferina de Freitas, 253 - Santa Cruz, PTB</p>
+    <p>Pagamento: Dinheiro | PIX | Cartão</p>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5599999999999?text=Olá! Gostaria de mais informações" class="zap-float">💬</a>
+</body>
+</html>
